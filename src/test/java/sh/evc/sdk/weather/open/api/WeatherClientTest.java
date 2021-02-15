@@ -15,8 +15,8 @@ import sh.evc.sdk.weather.open.util.JsonFormat;
  */
 public class WeatherClientTest extends BaseTest {
 
-  String lat = "31.104275188953306";
-  String lon = "121.376600481115";
+  private String lat = "31.104275188953306";
+  private String lon = "121.376600481115";
 
   /**
    * 当前

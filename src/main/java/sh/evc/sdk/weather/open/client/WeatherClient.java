@@ -46,7 +46,8 @@ public class WeatherClient {
   public <T extends ApiResponse> T execute(ApiRequest<T> request) {
     RequestMethod method = request.getMethod();
     Map<String, String> basicParams = request.getBasicParams();
-    String url = Const.SERVER_URL + request.getUri() + getUrlParams(basicParams);
+    basicParams.put("appid", config.getAppId());
+    String url = Const.SERVER_URL + request.getUri();
     String entityData = getEntityData(request.getEntityParams());
     Date requestTime = new Date();
     File file = request.getFile();
