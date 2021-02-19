@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author winixi
  * @date 2020/3/30 10:23 AM
  */
-public class ForecastResponse extends JsonResponse {
+public class ForecastGetResponse extends JsonResponse {
 
   /**
    * 返回记录条数

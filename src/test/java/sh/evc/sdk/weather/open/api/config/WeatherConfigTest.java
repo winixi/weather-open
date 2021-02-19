@@ -16,13 +16,13 @@ import java.util.Properties;
  * @author winixi
  * @date 2021/1/21 4:43 PM
  */
-public class TestConfig implements WeatherConfig {
+public class WeatherConfigTest implements WeatherConfig {
 
-  private final static Logger logger = LoggerFactory.getLogger(TestConfig.class);
+  private final static Logger logger = LoggerFactory.getLogger(WeatherConfigTest.class);
 
   private String appId;
 
-  public TestConfig() {
+  public WeatherConfigTest() {
     InputStream in = this.getClass().getResourceAsStream("/config.properties");
     try {
       InputStreamReader inputStreamReader = new InputStreamReader(in, StandardCharsets.UTF_8);

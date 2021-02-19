@@ -9,7 +9,7 @@ import sh.evc.sdk.weather.open.response.ApiResponse;
  * @author winixi
  * @date 2021/1/8 1:52 PM
  */
-public class TestResponseHandler implements ResponseHandler {
+public class ResponseHandlerTest implements ResponseHandler {
 
   @Override
   public void append(ApiResponse response) {

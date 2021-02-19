@@ -2,19 +2,19 @@ package sh.evc.sdk.weather.open.request;
 
 import sh.evc.sdk.weather.open.dict.Lang;
 import sh.evc.sdk.weather.open.dict.RequestMethod;
-import sh.evc.sdk.weather.open.response.ForecastResponse;
+import sh.evc.sdk.weather.open.response.CurrentGetResponse;
 import sh.evc.sdk.weather.open.util.ParamsMap;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 预报
+ * 当前
  *
  * @author winixi
  * @date 2021/2/15 12:55 PM
  */
-public class ForecastRequest extends ApiRequest<ForecastResponse> {
+public class CurrentGetRequest extends ApiRequest<CurrentGetResponse> {
 
   /**
    * 语言
@@ -38,7 +38,7 @@ public class ForecastRequest extends ApiRequest<ForecastResponse> {
    * @param lat
    * @param lon
    */
-  public ForecastRequest(String lat, String lon) {
+  public CurrentGetRequest(String lat, String lon) {
     this.lat = lat;
     this.lon = lon;
   }
@@ -63,7 +63,7 @@ public class ForecastRequest extends ApiRequest<ForecastResponse> {
 
   @Override
   public String getUri() {
-    return "/data/2.5/forecast";
+    return "/data/2.5/weather";
   }
 
   @Override
@@ -72,7 +72,7 @@ public class ForecastRequest extends ApiRequest<ForecastResponse> {
   }
 
   @Override
-  public Class<ForecastResponse> getResponseClass() {
-    return ForecastResponse.class;
+  public Class<CurrentGetResponse> getResponseClass() {
+    return CurrentGetResponse.class;
   }
 }

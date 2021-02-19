@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author winixi
  * @date 2020/3/30 10:23 AM
  */
-public class CurrentResponse extends JsonResponse {
+public class CurrentGetResponse extends JsonResponse {
 
   /**
    * 城市编号
