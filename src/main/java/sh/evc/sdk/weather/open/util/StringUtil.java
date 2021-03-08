@@ -1,7 +1,7 @@
 package sh.evc.sdk.weather.open.util;
 
 /**
- * @author vioao
+ * @author winixi
  */
 public class StringUtil {
 
